@@ -1,0 +1,134 @@
+.education-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b132b;
+    padding: 60px 20px;
+    margin-right: 100px;
+}
+
+.education-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 900px;
+    border-radius: 10px;
+}
+
+.education-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.education-image img{
+    margin-right: 100px;
+}
+
+.education-image img {
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #4a90e2;
+    transition: 0.3s ease-in-out;
+}
+
+.education-image img:hover {
+    box-shadow: 0px 0px 20px rgba(62, 166, 255, 0.7);
+}
+
+.education-text {
+    flex: 1;
+    color: white;
+    max-width: 50%;
+}
+
+.education-text .highlight {
+    color: #4a90e2;
+}
+
+.education-text h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.education-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+.education-text .course {
+    font-size: 18px;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.education-text .cgpa, 
+.education-text .academic-year {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.read-more-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .education-section{
+        margin-right: 0;
+    }
+    .education-image img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin-right:0;
+    }
+    /* .education-image img{
+        display:none;
+    } */
+    .education-text {
+        max-width: 100%;
+    }
+
+    .education-text h2 {
+        font-size: 28px;
+    }
+
+    .education-text h3 {
+        font-size: 20px;
+    }
+
+    .education-text .course {
+        font-size: 16px;
+    }
+
+    .education-text .cgpa,
+    .education-text .academic-year {
+        font-size: 14px;
+    }
+
+    .read-more-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

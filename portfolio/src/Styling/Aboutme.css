@@ -1,0 +1,78 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:200px 20px;
+    gap: 50px;
+    background-color: #0b132b; /* Updated background color */
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 50%;
+    color: white; /* All text white */
+}
+
+.hero-text .highlight {
+    color: #4a90e2; /* "Web Developer" text color */
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(62, 166, 255, 0.7);
+    transition: 0.3s ease-in-out;
+}
+
+.hero-image img:hover {
+    box-shadow: 0px 0px 25px rgba(62, 166, 255, 1);
+}
+
+/* Button Styling */
+.resume-btn {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding:80px 20px;
+    }
+
+    .hero-image {
+        order: -1; /* Moves the image to the top */
+    }
+
+    .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    /* Make the image round in mobile view */
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
